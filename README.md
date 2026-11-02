@@ -2,6 +2,10 @@
 
 English-language portfolio for Gabrielly de Oliveira Balão, focused on CRM & Marketing Operations, B2B Growth Strategy and Customer Lifecycle.
 
+Live site: https://gygaty.github.io/
+
+Source repository: https://github.com/gygaty/gygaty.github.io
+
 ## Preview
 
 Open `index.html` directly, or serve this folder with a static server:

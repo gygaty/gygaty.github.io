@@ -22,6 +22,10 @@ Publish this folder at the root of a GitHub repository. In **Settings → Pages*
 
 GitHub's official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
+## Visual direction
+
+Minimalist, entirely sans-serif, and strictly black, white and grey. The design uses restrained navigation, generous spacing and clear typography, with Zara, Chanel and Apple as references rather than copied branding.
+
 ## Editing
 
 - `index.html`: English copy, case studies, contact information and page metadata.

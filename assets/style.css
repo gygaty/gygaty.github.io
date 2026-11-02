@@ -630,6 +630,141 @@ h2 { font-size: 39px; }
   .contact-links > a.email-link { font-size: 20px; }
 }
 
+/* Keep the connecting lines tangent to the capability circles at every width. */
+.positioning { --focus-gap: 36px; --focus-radius: 32px; }
+.positioning p { gap: var(--focus-gap); }
+.positioning .focus-item + .focus-item::before {
+  left: calc(-50% - var(--focus-gap) + var(--focus-radius));
+  width: calc(100% + var(--focus-gap) - var(--focus-radius) - var(--focus-radius));
+  top: calc(var(--focus-radius) - 1px);
+  background: #444;
+}
+
+/* Phone-specific reading sizes, touch targets and diagram spacing. */
+@media (max-width: 760px) {
+  .header { min-height: 76px; gap: 12px; }
+  .wordmark { font-size: 11.5px; letter-spacing: .06em; padding-block: 14px; }
+  nav { gap: 14px; font-size: 10px; }
+  nav a { display: inline-flex; align-items: center; min-height: 44px; padding-block: 11px; }
+  .hero { padding-top: 42px; }
+  .hero > .eyebrow { font-size: 9px; letter-spacing: .08em; }
+  h1 { font-size: clamp(30px, 8.6vw, 40px); margin-top: 24px; line-height: 1.12; }
+  .hero-bottom { gap: 25px; margin-top: 24px; }
+  .hero-intro > p { font-size: 14px; line-height: 1.8; }
+  .button { min-height: 48px; font-size: 10px; margin-top: 18px; }
+  .positioning { --focus-gap: 14px; --focus-radius: 26px; margin-top: 8px; }
+  .positioning .focus-item { gap: 14px; font-size: 10px; line-height: 1.5; }
+  .focus-icon { width: 52px; height: 52px; }
+  .focus-icon .icon { width: 24px; height: 24px; stroke-width: 1.5; }
+  .experience-strip { margin-top: 30px; }
+  .experience-strip > .tiny-label { font-size: 9px; }
+  .experience-links a { min-height: 56px; padding: 14px 11px; font-size: 11px; gap: 9px; line-height: 1.45; }
+  .experience-links a > .icon { width: 18px; height: 18px; stroke-width: 1.5; }
+  .experience-links a > .index-arrow { width: 11px; height: 11px; }
+  .work { padding-top: 52px; }
+  .section-heading { margin-bottom: 32px; }
+  .section-heading > .eyebrow, .approach > div > .eyebrow { font-size: 10px; }
+  .section-heading > p, .case-copy > p, .compact-case > p, .royal-intro > p,
+  .channel-grid p, .approach-lead, .principles p { font-size: 14px; line-height: 1.8; }
+  .case-topline { gap: 13px; font-size: 13px; }
+  .case-number { font-size: 11px; }
+  .case-discipline { font-size: 9px; letter-spacing: .04em; line-height: 1.65; }
+  .tiny-label { font-size: 10px; }
+  .case-copy h3 { font-size: clamp(28px, 7.8vw, 33px); }
+  .outcome { gap: 12px; }
+  .outcome p { font-size: 12px; line-height: 1.7; }
+  .journey-figure { padding: 23px 15px; }
+  .figure-top .tiny-label { font-size: 8px; letter-spacing: .1em; }
+  .journey-track { margin-top: 32px; }
+  .node { width: 52px; height: 52px; margin-bottom: 22px; }
+  .node > .icon { width: 24px; height: 24px; stroke-width: 1.5; }
+  .node-index { font-size: 9px; }
+  .journey-track::before { top: 25px; }
+  .journey-track strong { font-size: 11px; }
+  .journey-track small { font-size: 10px; line-height: 1.55; margin-top: 6px; }
+  .time-bracket span { font-size: 10px; padding-inline: 8px; }
+  .signal-row { font-size: 11px; align-items: flex-start; gap: 8px; }
+  .signal-row .icon { margin-top: 2px; }
+  figcaption { font-size: 10px; line-height: 1.7; }
+  .case-details { margin-top: 24px; }
+  summary { min-height: 56px; font-size: 13px; padding-block: 16px; }
+  .plus { font-size: 24px; padding-inline: 4px; }
+  .detail-grid h4, .detail-stack h4 { font-size: 13px; }
+  .detail-grid p, .detail-stack p { font-size: 13px; line-height: 1.85; }
+  .case-royal { padding: 24px 18px; }
+  .royal-intro { margin-top: 27px; }
+  .royal-intro h3 { font-size: clamp(27px, 7.5vw, 34px); }
+  .timing-panel { margin-top: 24px; padding-block: 24px; gap: 26px; }
+  .timing-panel .tiny-label { font-size: 9px; letter-spacing: .08em; }
+  .time-comparison { margin-top: 20px; }
+  .time-comparison > span:not(.time-arrow) { font-size: clamp(50px, 14vw, 60px); }
+  .time-comparison > span > span { font-size: 10px; }
+  .time-comparison .time-icon { width: 36px; height: 36px; }
+  .script-modules { gap: 9px; margin-bottom: 18px; }
+  .script-modules > span { width: 36px; height: 36px; }
+  .script-modules > span + span::before { left: -10px; width: 9px; }
+  .script-modules .icon { stroke-width: 1.5; }
+  .script-story > p { font-size: 12px; line-height: 1.85; }
+  .cascade li { gap: 12px; min-height: 60px; padding: 14px 12px; }
+  .cascade li > .cascade-head { width: 58px; min-width: 58px; gap: 10px; }
+  .cascade-head .icon { width: 24px; height: 24px; stroke-width: 1.5; }
+  .cascade-head > span { font-size: 10px; }
+  .cascade li:not(:last-child)::after { left: 42px; }
+  .cascade strong { font-size: 12px; line-height: 1.5; }
+  .cascade-note { font-size: 10px; line-height: 1.7; margin-top: 17px; }
+  .evidence-grid > div, .evidence-grid > div + div {
+    grid-template-columns: 24px minmax(0, 1fr);
+    column-gap: 10px;
+    padding: 24px 0;
+  }
+  .evidence-icon { grid-column: 1; grid-row: 1; width: 21px; height: 21px; margin: 0; }
+  .evidence-grid h4 { grid-column: 2; grid-row: 1; font-size: 12px; align-self: center; }
+  .evidence-number { grid-column: 1 / -1; grid-row: 2; font-size: 40px; margin: 14px 0 8px; }
+  .evidence-number.rows { font-size: clamp(23px, 6.4vw, 28px); line-height: 1.4; max-width: none; white-space: nowrap; }
+  .evidence-grid p { grid-column: 1 / -1; grid-row: 3; font-size: 12px; max-width: none; margin-top: 0; }
+  .evidence-tag { grid-column: 1 / -1; grid-row: 4; font-size: 9px; margin-top: 12px; }
+  .compact-case > .tiny-label { font-size: 9px; line-height: 1.75; }
+  .mini-model { min-height: 168px; gap: 12px; padding-inline: 14px; }
+  .model-step { font-size: 11px; line-height: 1.5; gap: 15px; }
+  .model-step > .icon { width: 40px; height: 40px; stroke-width: 1.2; }
+  .model-arrow, .model-bridge { margin-top: -29px; }
+  .compact-outcome .tiny-label { font-size: 9px; }
+  .editorial-note { font-size: 11px; line-height: 1.8; }
+  .channel-grid .tiny-label { font-size: 9px; line-height: 1.8; }
+  .channel-label { font-size: 12px; }
+  .channel-visual { height: 155px; }
+  .execution-path { padding-inline: 16px; }
+  .execution-path > span { width: 42px; height: 42px; }
+  .execution-path > i { width: 20px; }
+  .principles h3 { font-size: 14px; }
+  .principles li { gap: 16px; }
+  .principle-symbol .icon { stroke-width: 1.5; }
+  .principle-symbol > span { font-size: 10px; }
+  .contact-top .eyebrow, .contact-top > .tiny-label { font-size: 9px; }
+  .contact-bottom > p { font-size: 13px; }
+  .contact-links > a { min-height: 44px; font-size: 14px; }
+  .contact-links > a.email-link { font-size: clamp(19px, 5.3vw, 23px); }
+  .contact-links button { min-height: 44px; font-size: 12px; }
+  #copy-status { font-size: 11px; }
+  .footer { gap: 8px; font-size: 10px; padding-block: 16px; }
+  .footer a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+@media (max-width: 370px) {
+  .wordmark { font-size: 10.5px; }
+  nav { gap: 12px; }
+  .hero > .eyebrow { font-size: 8px; }
+  .positioning .focus-item { font-size: 9px; }
+  .experience-links a { font-size: 10px; padding-inline: 10px; gap: 8px; }
+  .experience-links a > .index-arrow { display: none; }
+  .case-royal { padding-inline: 15px; }
+  .model-step { font-size: 10px; }
+  .model-step > .icon { width: 36px; height: 36px; }
+  .mini-model { gap: 9px; padding-inline: 12px; }
+  .model-bridge { gap: 5px; }
+  .model-bridge > span { width: 10px; }
+  .footer { font-size: 9px; }
+}
+
 @media print {
   :root { color-scheme: light; --paper: #fff; --ink: #111; --muted: #555; --line: #ccc; --panel: #f5f5f5; }
   * { color: #111 !important; border-color: #bbb !important; }

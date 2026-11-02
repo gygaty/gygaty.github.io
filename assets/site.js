@@ -7,7 +7,7 @@ let feedbackTimer;
 copyButton?.addEventListener('click', async () => {
   clearTimeout(feedbackTimer);
   try {
-    await navigator.clipboard.writeText('balaogaby@gmail.com');
+    await navigator.clipboard.writeText('gabr.oliveira@icloud.com');
     copyStatus.textContent = 'Email copied to clipboard.';
   } catch {
     copyStatus.textContent = 'Please copy the email address above.';

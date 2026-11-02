@@ -24,7 +24,7 @@ GitHub's official instructions: https://docs.github.com/en/pages/getting-started
 
 ## Visual direction
 
-Minimalist, entirely sans-serif, and strictly black, white and grey. The design uses restrained navigation, generous spacing and clear typography, with Zara, Chanel and Apple as references rather than copied branding.
+Permanent dark theme (no switch), entirely sans-serif, and strictly black, white and grey. A narrower desktop column, original thin-line SVG icons and conceptual process diagrams make the same case content more visual. The design uses restrained navigation, generous spacing and clear typography, with Zara, Chanel and Apple as references rather than copied branding.
 
 ## Editing
 
